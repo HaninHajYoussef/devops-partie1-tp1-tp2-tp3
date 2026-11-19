@@ -1,0 +1,9 @@
+---
+app_repo: "https://github.com/HaninHajYoussef/portfolio-nextjs.git"
+app_version: "main"
+app_dir: "/opt/portfolio"
+app_port: 3100
+app_name: "portfolio"
+app_user: "deploy"
+node_major: 22
+server_name: "portfolio.local"

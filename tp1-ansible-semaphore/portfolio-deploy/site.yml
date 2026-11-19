@@ -1,0 +1,9 @@
+---
+- name: Déployer le portfolio Next.js
+  hosts: portfolio
+  become: true
+  roles:
+    - { role: common, tags: [common] }
+    - { role: nodejs, tags: [nodejs] }
+    - { role: app, tags: [app] }
+    - { role: nginx, tags: [nginx] }
