@@ -1,0 +1,17 @@
+# Si tu as téléchargé forgejo.zip du cours, utilise plutôt son docker-compose.yml.
+services:
+  forgejo:
+    image: codeberg.org/forgejo/forgejo:11
+    container_name: forgejo
+    restart: always
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+      # autorise les webhooks vers des IP privées (indispensable pour Coolify en local)
+      - FORGEJO__webhook__ALLOWED_HOST_LIST=external,private
+    volumes:
+      - ./forgejo-data:/data
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - "3001:3000"   # web (3000 est réservé à Next.js / Backstage)
+      - "2222:22"     # SSH

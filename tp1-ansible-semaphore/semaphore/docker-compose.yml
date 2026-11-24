@@ -1,0 +1,21 @@
+services:
+  semaphore:
+    image: semaphoreui/semaphore:latest
+    container_name: semaphore
+    restart: unless-stopped
+    ports:
+      - "3010:3000"
+    environment:
+      SEMAPHORE_DB_DIALECT: bolt
+      SEMAPHORE_ADMIN: admin
+      SEMAPHORE_ADMIN_NAME: Admin
+      SEMAPHORE_ADMIN_EMAIL: admin@localhost
+      SEMAPHORE_ADMIN_PASSWORD: ChangeMe-2026
+      SEMAPHORE_ACCESS_KEY_ENCRYPTION: ${SEMAPHORE_KEY}
+      TZ: Africa/Tunis
+    volumes:
+      - semaphore_data:/var/lib/semaphore
+      - semaphore_config:/etc/semaphore
+volumes:
+  semaphore_data:
+  semaphore_config:

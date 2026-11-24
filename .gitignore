@@ -1,0 +1,4 @@
+.env
+forgejo-data/
+*.pem
+id_*

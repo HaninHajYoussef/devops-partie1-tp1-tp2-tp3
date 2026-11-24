@@ -1,0 +1,9 @@
+{
+  "extra_variables": {
+    "server_name": "portfolio.local",
+    "app_port": 3100
+  },
+  "environment_variables": {
+    "ANSIBLE_HOST_KEY_CHECKING": "False"
+  }
+}
