@@ -1,13 +1,13 @@
-# GUIDE RAPIDE – Partie 1 (TP1 B + TP2 + TP3) – environ 1 heure
+ Partie 1 (TP1 B + TP2 + TP3) 
 
 Légende : **[PC]** = PC Windows (PowerShell ou navigateur) · **[VM]** = terminal SSH sur la VM devops (192.168.56.101, utilisateur hanin)
 
 ## Ordre conseillé
-1. (5 min)  TP2 – pré-vérification + lancement de l'installation Coolify (elle tourne pendant que tu fais autre chose)
-2. (25 min) TP3 – CI/CD GitHub Actions + Render
-3. (15 min) TP1 partie B – Semaphore
-4. (15 min) TP2 – Forgejo, déploiement, webhook
-5. (5 min)  Rapports + captures + git push
+1. TP2 – pré-vérification + lancement de l'installation Coolify (elle tourne pendant que tu fais autre chose)
+2. TP3 – CI/CD GitHub Actions + Render
+3. TP1 partie B – Semaphore
+4. TP2 – Forgejo, déploiement, webhook
+5. Rapports + captures + git push
 
 ## Fichiers
 - tp1-ansible-semaphore/semaphore/GUIDE-SEMAPHORE.md  (+ docker-compose.yml, variable-group.json)
